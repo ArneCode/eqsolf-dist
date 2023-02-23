@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" -->
+    <!--     integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="katex/lib/katex.min.css">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" -->
+    <!--     integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" -->
+    <!--     crossorigin="anonymous"></script> -->
+    <script defer="" src="katex/lib/katex.min.js"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" -->
+    <!--     integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" -->
+    <script defer="" src="katex/lib/auto-render.min.js" onload="requestAnimationFrame(() => {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                ]
+            });
+            console.log('katex attach');
+        })">
+        </script>
+    
+    <script src="katex/copy.js"></script>
+    <script src="katex/katex2tex.js"></script>
+    <!-- <script defer src="//unpkg.com/mathlive"></script> -->
+    <script src="katex/lib/mathlive.min.js"></script>
+    
+    <script src="script.js">
+
+    </script>
+    
+    
+    <script src="treant/Treant.js"></script>
+    <link rel="stylesheet" href="treant/Treant.css">
+    <script src="treant/vendor/raphael.js"></script>
+    <script src="treant/vendor/jquery.min.js"></script>
+    <script src="treant/vendor/jquery.easing.js"></script>
+    <!-- <script src="glue.js"/> -->
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #mathfield {
+            width: 70%;
+            font-size: 3em;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .transform_info {
+            border: 1px solid black;
+        }
+    </style>
+
+<link rel="preload" href="/rust-calculator-yew-fd5fc8819b405966_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/rust-calculator-yew-fd5fc8819b405966.js"></head>
+
+<body>
+
+
+
+<script type="module">import init from '/rust-calculator-yew-fd5fc8819b405966.js';init('/rust-calculator-yew-fd5fc8819b405966_bg.wasm');</script></body></html>
